@@ -485,21 +485,6 @@
 			path = widgets;
 			sourceTree = "<group>";
 		};
-		33C829A01B8A413E00CFC049 /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				33C829A11B8A413E00CFC049 /* shared */,
-			);
-			path = Library;
-			sourceTree = "<group>";
-		};
-		33C829A11B8A413E00CFC049 /* shared */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = shared;
-			sourceTree = "<group>";
-		};
 		D00057601941BEBB008C1F77 /* classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -524,7 +509,6 @@
 				D069934A1924B42C004C4DC8 /* EasyTool */,
 				25BE95AA1A4BA702000DFBA0 /* EasyTools */,
 				336A58021A788F2100D3EE75 /* tooltest */,
-				33C829A01B8A413E00CFC049 /* Library */,
 				D06993461924B42C004C4DC8 /* Products */,
 			);
 			sourceTree = "<group>";
