@@ -35,6 +35,7 @@
 #import <EasyTools/ETRefreshProtocol.h>
 #import <EasyTools/ETRefreshControl.h>
 #import <EasyTools/ETLoadmoreControl.h>
+#import <EasyTools/ETNavigationController.h>
 #import <EasyTools/ETLayoutViewController.h>
 
 #import <EasyTools/ETPhotoKit.h>

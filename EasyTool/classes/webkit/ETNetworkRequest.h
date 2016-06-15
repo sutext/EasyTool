@@ -67,17 +67,6 @@ typedef NS_ENUM(NSInteger, ETNetworkErrorCode)
 -(nullable id)analysisResponseObject:(id)returnedObject header:(NSDictionary  * __nullable  __autoreleasing  * __nullable)header extends:(id __nullable * __nullable)extends error:(NSError * __nullable __autoreleasing  * __nullable)error;
 @optional
 /*!
- *  @author 15-02-15 11:02:26
- *
- *  @brief  this method is called before the request will be send. user can implement it to filter what request can be send
- *
- *  @param directReturnedObject may be cached object. it will be use as the returnedObject when return NO.
- *  @param error                if some error occur you can get detail from it;
- *
- *  @return  YES means  it can be send so the directReturnedObject an error will be ignored .defaut is YES.
- */
--(BOOL)prepareForSending:(__autoreleasing id __nullable * __nullable)directReturnedObject error:(NSError *__nullable __autoreleasing * __nullable)error;
-/*!
  *  @author 15-03-30 18:03:38
  *
  *  @brief  called when the operation did completed

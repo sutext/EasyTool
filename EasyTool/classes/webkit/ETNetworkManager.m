@@ -242,16 +242,6 @@ completedBlock:(void (^)(id<ETNetworkRequest> req, ETNetworkResponse *resp, NSEr
     {
         NSLog(@"ETNetworkManager:\nThe baseURL:\n%@\nThe requestURL:\n%@\nThe request params:\n%@",self.sessionManager.baseURL,requestURL,params);
     }
-    if ([request respondsToSelector:@selector(prepareForSending:error:)])
-    {
-        id directObject;
-        NSError *error;
-        if (![request prepareForSending:&directObject error:&error])
-        {
-            [self handleFilterWithBlock:completedBlock responseObj:directObject andRequest:request error:error];
-            return nil;
-        }
-    }
     NSURLSessionDataTask *task=nil;
     switch (request.requestMethod)
     {

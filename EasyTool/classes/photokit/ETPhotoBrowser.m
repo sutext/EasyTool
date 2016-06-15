@@ -8,6 +8,7 @@
 
 #import <EasyTools/ETPhotoBrowser.h>
 #import <EasyTools/ETPBrowserController.h>
+#import <EasyTools/ETNavigationController.h>
 
 static ETPhotoBrowser *__strong kETPhotoGlobalBrowser;
 
@@ -20,18 +21,6 @@ static ETPhotoBrowser *__strong kETPhotoGlobalBrowser;
 @property(nonatomic,strong,readwrite)UIWindow *browserWindow;
 @property(nonatomic,strong,readwrite)ETPBrowserController *browserController;
 
-@end
-@interface ETPBrowserNavigationController:UINavigationController
-@end
-@implementation ETPBrowserNavigationController
--(UIViewController *)childViewControllerForStatusBarStyle
-{
-    return self.topViewController;
-}
--(UIViewController *)childViewControllerForStatusBarHidden
-{
-    return nil;
-}
 @end
 @implementation ETPhotoBrowser
 +(BOOL)onlyBrowserExsit
@@ -54,7 +43,7 @@ static ETPhotoBrowser *__strong kETPhotoGlobalBrowser;
         [photoContoller __setupPhotoBrowser:self];
         self.browserController=photoContoller;
         if ([browservcClass autoCreateNavigation]) {
-            UINavigationController *nav=[[ETPBrowserNavigationController alloc] initWithRootViewController:photoContoller];
+            UINavigationController *nav=[[ETNavigationController alloc] initWithRootViewController:photoContoller];
             self.browserWindow.rootViewController=nav;
         }
         else

@@ -9,10 +9,8 @@
 #import <EasyTools/ETPhotoView.h>
 #import <EasyTools/ETImageView.h>
 #import <EasyTools/ETPhotoObject.h>
-#import <EasyTools/EasyTool.h>
 #import <EasyTools/ETPhotoConfig.h>
 #import <EasyTools/UIView+EasyTools.h>
-#import <EasyTools/UIImage+EasyTools.h>
 @interface ETPhotoObject(privateMethods)
 -(CGRect)__originalRect;
 @end

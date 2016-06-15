@@ -7,8 +7,15 @@
 //
 
 #import "ETAlertViewController.h"
+@interface ETAlertViewController()
 
+@end
 @implementation ETAlertViewController
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+}
 -(UIViewController *)childViewControllerForStatusBarHidden
 {
     return [UIApplication sharedApplication].keyWindow.rootViewController;

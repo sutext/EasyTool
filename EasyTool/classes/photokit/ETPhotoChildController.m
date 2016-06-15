@@ -9,7 +9,6 @@
 #import <EasyTools/ETPhotoChildController.h>
 #import <EasyTools/ETPhotoViewController.h>
 #import <EasyTools/ETPhotoObject.h>
-#import <EasyTools/EasyTool.h>
 
 @interface ETPhotoChildController ()
 @property(nonatomic,strong,readwrite)ETPhotoView *photoView;

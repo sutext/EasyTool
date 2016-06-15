@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		25BE95AE1A4BA702000DFBA0 /* EasyTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 25BE95AD1A4BA702000DFBA0 /* EasyTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3324F0611CEC413900BE9C0F /* ETNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3324F05F1CEC413900BE9C0F /* ETNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3324F0621CEC413900BE9C0F /* ETNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3324F0601CEC413900BE9C0F /* ETNavigationController.m */; };
 		333294791B8A2FFA0090A9C1 /* ETEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 333294771B8A2FFA0090A9C1 /* ETEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3332947A1B8A2FFA0090A9C1 /* ETEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 333294781B8A2FFA0090A9C1 /* ETEncryptor.m */; };
 		3332947D1B8A30460090A9C1 /* ETDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3332947B1B8A30460090A9C1 /* ETDecryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -150,6 +152,8 @@
 		25BE95A91A4BA702000DFBA0 /* EasyTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BE95AC1A4BA702000DFBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25BE95AD1A4BA702000DFBA0 /* EasyTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyTools.h; sourceTree = "<group>"; };
+		3324F05F1CEC413900BE9C0F /* ETNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETNavigationController.h; sourceTree = "<group>"; };
+		3324F0601CEC413900BE9C0F /* ETNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETNavigationController.m; sourceTree = "<group>"; };
 		333294771B8A2FFA0090A9C1 /* ETEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETEncryptor.h; sourceTree = "<group>"; };
 		333294781B8A2FFA0090A9C1 /* ETEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETEncryptor.m; sourceTree = "<group>"; };
 		3332947B1B8A30460090A9C1 /* ETDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDecryptor.h; sourceTree = "<group>"; };
@@ -475,6 +479,8 @@
 				334039F51C904553007FF932 /* ETGlobalContainer.m */,
 				3398D7341C5A30CF00F8FDA8 /* ETAlertViewController.h */,
 				3398D7351C5A30CF00F8FDA8 /* ETAlertViewController.m */,
+				3324F05F1CEC413900BE9C0F /* ETNavigationController.h */,
+				3324F0601CEC413900BE9C0F /* ETNavigationController.m */,
 				33B326631A80E985000A0082 /* ETLayoutViewController.h */,
 				33B326641A80E985000A0082 /* ETLayoutViewController.m */,
 				33F147F41BEC8C350026ADD0 /* ETPopoverView.h */,
@@ -576,6 +582,7 @@
 				33B3266B1A80E985000A0082 /* UIImage+EasyTools.h in Headers */,
 				3350F6291C76FE3D00D95DC8 /* ETImageCache.h in Headers */,
 				33B3266F1A80E985000A0082 /* UIViewController+EasyTools.h in Headers */,
+				3324F0611CEC413900BE9C0F /* ETNavigationController.h in Headers */,
 				334039F61C904553007FF932 /* ETGlobalContainer.h in Headers */,
 				33B326AB1A80ED54000A0082 /* ETPhotoConfig.h in Headers */,
 				33F290441A888C73001DCBB5 /* ETPhotoKit.h in Headers */,
@@ -716,6 +723,7 @@
 				33B326981A80E985000A0082 /* ETNetworkRequest.m in Sources */,
 				33B326A01A80E985000A0082 /* ETAlertManager.m in Sources */,
 				33B326891A80E985000A0082 /* ETTableView.m in Sources */,
+				3324F0621CEC413900BE9C0F /* ETNavigationController.m in Sources */,
 				3350F5F21C76BA1A00D95DC8 /* AFHTTPSessionManager.m in Sources */,
 				33B3266E1A80E985000A0082 /* UIView+EasyTools.m in Sources */,
 				33B3268D1A80E985000A0082 /* ETTapView.m in Sources */,

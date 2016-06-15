@@ -27,21 +27,21 @@
 //    fetchOptions.includeHiddenAssets = YES;
 //    PHFetchResult *result=[PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:fetchOptions];
 //    
-//    NSMutableArray *photoArray=[NSMutableArray array];
-//    [result enumerateObjectsUsingBlock:^(PHAsset * obj, NSUInteger idx, BOOL *stop) {
-//        [photoArray addObject:[[ETPhotoObject alloc] initWithImage:[UIImage imageWithColor:[UIColor colorWithWhite:idx%10/10.0 alpha:1] size:CGSizeMake(kETScreenWith, kETScreenHeight)] thumb:nil]];
-//    }];
-//    ETButton *button  = [[ETButton alloc] initWithStyle:ETButtonTitleStyleBottom];
-//    [button setImage:[UIImage imageWithColor:[UIColor redColor] size:CGSizeMake(10, 10)] forState:UIControlStateNormal];
-//    [button setImageEdgeInsets:UIEdgeInsetsMake(20, 20, 20, 20)];
-//    [button setContentEdgeInsets:UIEdgeInsetsMake(10, 10,10, 10)];
-//    [button setTitleEdgeInsets:UIEdgeInsetsMake(20, 0, 0, 0)];
-//    [button setClickedAction:^(ETButton *sender) {
-//        ETPhotoBrowser *brow = [[ETPhotoBrowser alloc] initWithPhotos:photoArray startIndex:0 browservcClass:[TSPhotoController class]];
-//        [brow show];
-//        [self showActionSheet];
-//        NSLog(@"%@",sender.titleLabel);
-//    }];
+    NSMutableArray *photoArray=[NSMutableArray array];
+    [result enumerateObjectsUsingBlock:^(PHAsset * obj, NSUInteger idx, BOOL *stop) {
+        [photoArray addObject:[[ETPhotoObject alloc] initWithImage:[UIImage imageWithColor:[UIColor colorWithWhite:idx%10/10.0 alpha:1] size:CGSizeMake(kETScreenWith, kETScreenHeight)] thumb:nil]];
+    }];
+    ETButton *button  = [[ETButton alloc] initWithStyle:ETButtonTitleStyleBottom];
+    [button setImage:[UIImage imageWithColor:[UIColor redColor] size:CGSizeMake(10, 10)] forState:UIControlStateNormal];
+    [button setImageEdgeInsets:UIEdgeInsetsMake(20, 20, 20, 20)];
+    [button setContentEdgeInsets:UIEdgeInsetsMake(10, 10,10, 10)];
+    [button setTitleEdgeInsets:UIEdgeInsetsMake(20, 0, 0, 0)];
+    [button setClickedAction:^(ETButton *sender) {
+        ETPhotoBrowser *brow = [[ETPhotoBrowser alloc] initWithPhotos:photoArray startIndex:0 browservcClass:[TSPhotoController class]];
+        [brow show];
+        [self showActionSheet];
+        NSLog(@"%@",sender.titleLabel);
+    }];
 //    button.imageSize=CGSizeMake(150, 50);
 //    button.backgroundColor = [UIColor lightGrayColor];
 //    [button setTitle:@"腾讯的微博哦放放" forState:UIControlStateNormal];

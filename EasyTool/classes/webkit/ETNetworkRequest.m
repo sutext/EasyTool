@@ -11,7 +11,7 @@
 
 NSString *const kETHeaderCodeKey         = @"com.icegent.easytools.kETHeaderCodeKey";
 NSString *const kETHeaderMeesageKey      = @"com.icegent.easytools.kETHeaderMeesageKey";
-NSString *const ETNetworkErrorDomain    = @"com.icegent.easytools.ETNetworkErrorDomain";
+NSString *const ETNetworkErrorDomain     = @"com.icegent.easytools.ETNetworkErrorDomain";
 
 @interface ETDesignedRequest()
 @property(nonatomic,strong)NSMutableDictionary *mutableParams;

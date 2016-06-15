@@ -7,8 +7,8 @@
 //
 
 #import <EasyTools/ETPhotoManager.h>
-#import <EasyTools/EasyTool.h>
 #import <Photos/Photos.h>
+#import <EasyTools/EasyTool.h>
 
 @interface ETPhotoManager()
 @property(nonatomic,strong)NSCache *thumbCache;
@@ -90,7 +90,9 @@
         return nil;
     }
     NSBlockOperation *opertaion = [[NSBlockOperation alloc] init];
-    __weak NSBlockOperation *weakOP = opertaion;
+    
+    __weak NSBlockOperation * weakOP = opertaion;
+    
     CGFloat maxlenth = MAX(kETScreenHeight, kETScreenWith);
     [opertaion addExecutionBlock:^{
         NSError *error;
