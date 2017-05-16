@@ -59,7 +59,7 @@ NS_CLASS_AVAILABLE_IOS(7_0)
 @property (nonatomic) CGVector                                  rightDisplayVector;
 
 /*------thes method may called by user  for control the status by himself-----*/
-- (void)setPanGestureEnable:(BOOL)enable;//enable the gesture or not default is yes
+- (void)setPanGestureEnable:(BOOL)enable;//enable the gesture or not. default is yes
 - (void)showLeftViewController:(BOOL)animated;//show the left controller . if the leftViewController is nil or the status isn't ETLayoutViewStatusNormal nothing happend.
 - (void)showRightViewController:(BOOL)animated;//show the right controller.if the rightViewController is nil the status isn't ETLayoutViewStatusNormal nothing happend
 - (void)dismissCurrentController:(BOOL)animated;//dismiss current showed controller if status is neither ETLayoutViewStatusLeftshowed nor ETLayoutViewStatusRightshowed  nothing happend.

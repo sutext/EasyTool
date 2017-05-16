@@ -22,7 +22,6 @@
     static ETPhotoManager *_sharedManager;
     dispatch_once(&onceToken, ^{
         _sharedManager = [[super allocWithZone:nil] init];
-        
     });
     return _sharedManager;
 }

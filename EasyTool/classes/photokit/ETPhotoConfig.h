@@ -10,7 +10,9 @@
 #import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 NS_CLASS_AVAILABLE_IOS(7_0)@interface ETPhotoConfig : NSObject
-+(instancetype)defaultConfig;//the default and shared instance.
+#if FOUNDATION_SWIFT_SDK_EPOCH_AT_LEAST(8)
+@property (class, readonly, strong) ETPhotoConfig *defaultConfig;//the default and shared instance.
+#endif
 @property(nonatomic) CGFloat      aniduration;// default is 0.35
 @property(nonatomic) CGFloat      maximumZoomScale;// default is 3
 @property(nonatomic) CGRect       thumbRect;//the rect of thumb relative to the screen default is 100*100 in center

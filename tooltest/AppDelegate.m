@@ -8,9 +8,14 @@
 
 #import "AppDelegate.h"
 #import <EasyTools/EasyTools.h>
+#import <AVFoundation/AVFoundation.h>
+#import <objc/message.h>
+#import <WebKit/WebKit.h>
 @interface AppDelegate ()
 
 @end
+
+ NSString  * const TST = @"111";
 
 @implementation AppDelegate
 
@@ -18,7 +23,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window.backgroundColor=[UIColor whiteColor];
-    
     return YES;
 }
 

@@ -115,15 +115,11 @@ NSString *const kETNetworkStatusKey=@"com.icegent.easytools.kETNetworkStatusKey"
 #pragma mark -- private methods
 -(BOOL)checkRequest:(id<ETNetworkRequest>)request
 {
-    if (request
-        &&[request conformsToProtocol:@protocol(ETNetworkRequest)]
-        &&[request respondsToSelector:@selector(requestMethod)]
-        &&[request respondsToSelector:@selector(requestURL)]
-        &&[request respondsToSelector:@selector(params)])
-    {
-        return YES;
-    }
-    return NO;
+    return request
+    &&[request conformsToProtocol:@protocol(ETNetworkRequest)]
+    &&[request respondsToSelector:@selector(requestMethod)]
+    &&[request respondsToSelector:@selector(requestURL)]
+    &&[request respondsToSelector:@selector(params)];
 }
 
 
@@ -305,8 +301,8 @@ completedBlock:(void (^)(id<ETNetworkRequest> req, ETNetworkResponse *resp, NSEr
             [formData appendPartWithFileData:upobj.data name:upobj.name fileName:upobj.fileName mimeType:upobj.mimeType];
         }];
     } error:&error];
-    
-    NSURLSessionUploadTask * uploadTask =  [self.sessionManager uploadTaskWithRequest:uploadRequest
+    NSURLSessionUploadTask * uploadTask = nil;
+    uploadTask =  [self.sessionManager uploadTaskWithRequest:uploadRequest
                                                                              fromData:nil
                                                                              progress:progress
                                                                     completionHandler:^(NSURLResponse * respones, id responseObject, NSError * error)
